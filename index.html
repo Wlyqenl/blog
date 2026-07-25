@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>林深的博客 · 技术 · 随笔 · 摄影</title>
+  <meta name="description" content="一个关于代码、随笔与摄影的个人博客。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-view="home">
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#/"><span class="dot"></span>林深的博客</a>
+      <nav class="site-nav">
+        <a href="#/" data-nav="home">首页</a>
+        <a href="#/about" data-nav="about">关于</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="app">
+    <!-- 内容由 app.js 渲染 -->
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© 2026 林深的博客 · 用文字与照片记录生活</span>
+      <span>静态生成 · 支持 Markdown · 离线可用</span>
+    </div>
+  </footer>
+
+  <!-- Markdown 解析器（零依赖） -->
+  <script src="lib/md.js"></script>
+  <!-- 文章数据（由 scripts/build.js 生成） -->
+  <script src="content/posts/posts.js"></script>
+  <!-- 前端逻辑 -->
+  <script src="js/app.js"></script>
+</body>
+</html>
